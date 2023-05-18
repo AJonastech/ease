@@ -6,7 +6,7 @@ import bgVideo from "./assets/videos/-9e7d-436d-8c86-9a177e4a782d.mp4";
 
 function App() {
   return (
-    <main className="relative min-h-screen h-screen w-screen">
+    <main className="relative min-h-screen h-screen ">
       <video
         src={bgVideo}
         type="video/mp4"

@@ -53,13 +53,10 @@ function Hero() {
           <small>Sign up today and earn up to $200. Conditions apply. **</small>
         </p>
       </div>
-      <div className="relative flex-col gap-2  flex my-[1rem] h-fit  w-full">
-        <HeroImg src={main} />
-        <article className="  relative flex  justify-center items-center px-[4rem] w-full h-fit">
-          <HeroImg
-            style={" z-10  h-[40vw]  object-cover "}
-            src={hero1}
-          />
+      <div className="relative bg-white flex-col gap-2  flex my-[1rem] h-fit  w-full">
+        <HeroImg style={"w-full "} src={main} />
+        <article className="  relative flex  my-[1rem] justify-center items-center px-[4rem] w-full h-fit">
+          <HeroImg style={" z-10  h-[40vw]  object-cover "} src={hero1} />
           <HeroImg
             style={
               " absolute  left-10 right-0 top-0 mx-auto  bottom-0 h-[40vw]   fit "
@@ -67,9 +64,7 @@ function Hero() {
             src={hero2}
           />
           <HeroImg
-            style={
-              " z-10 lg:-ml-[6rem] -ml-[0rem] h-[40vw]  object-cover "
-            }
+            style={" z-10 lg:-ml-[6rem] -ml-[0rem] h-[40vw]  object-cover "}
             src={hero3}
             className="grow"
           />
