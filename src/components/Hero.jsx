@@ -56,17 +56,18 @@ function Hero() {
       <div className="relative bg-white flex-col gap-2 my-[2rem]  flex lg:my-[1rem] h-fit  w-full">
         <HeroImg style={"w-full "} src={main} />
         <article className="  relative flex  my-[1rem] justify-center items-center px-[4rem] w-full h-fit">
-          <HeroImg style={" z-10  h-[40vw]  object-cover "} src={hero1} />
+          <HeroImg style={"   h-[40vw]  object-cover "} src={hero1} />
           <HeroImg
             style={
-              " absolute  left-10 right-0 top-0 mx-auto  bottom-0 h-[40vw]   fit "
+              " absolute z-10 left-10 right-0 top-0 mx-auto  bottom-0 h-[40vw]   fit "
             }
             src={hero2}
           />
           <HeroImg
-            style={" z-10 lg:-ml-[6rem] -ml-[0rem] h-[40vw]  object-cover "}
+            style={
+              " z-40 sm:-ml-[7rem] xl:-ml-[10rem]  -ml-[2rem] h-[40vw]  object-cover "
+            }
             src={hero3}
-            className="grow"
           />
         </article>
       </div>
