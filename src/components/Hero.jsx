@@ -25,7 +25,7 @@ function Hero() {
         <h2 className="text-[59px]">Business banking With</h2>
         <div className="border-2 border-red-500 overflow-y-hidden">
        {
-<motion.h1 initial={ {y:100}} animate={{y:0}} transition={{duration : 0.5}} className="text-[80px] inline-block from-[#A088FF] text-gradient-to-r ">{textData[count]}</motion.h1>
+<motion.h1 initial={ {y:100}} animate={{y:0}} transition={{duration : 0.5}} className="text-[80px] text-transparent bg-clip-text bg-gradient-to-br font-bold inline-block from-[#A088FF] text-gradient-to-r ">{textData[count]}</motion.h1>
        } 
         </div>
       
