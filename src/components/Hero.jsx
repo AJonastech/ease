@@ -1,5 +1,5 @@
 /* eslint-disable react/style-prop-object */
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import main from "../assets/Images/main.png";
 import hero1 from "../assets/Images/hero1.png";
 import hero2 from "../assets/Images/hero2.png";
@@ -10,14 +10,15 @@ import {AiOutlineArrowRight} from "react-icons/ai"
 function Hero() {
     const textData = ["Zero Fees", "Free Wires", "Unlimited Rewards", "No Credit Check"]
  const [count, setCount] = useState(0);
- setInterval(()=>{
-    if (count === 3){
-        setCount(0)
-    }else{
-        setCount(count+1)
-    }
+   useEffect(() => {
+        
+        const interval = setInterval(() => {
+          setCount(count =>count % 3 + 1);
+        }, 3000); // update index three every second
+    
+        return () => clearInterval(interval);
+      }, []);
 
- }, 3000)
 
   return (
     <div className="text-[#fff] px-[80px]">
@@ -33,7 +34,7 @@ function Hero() {
           Thousands of entrepreneurs bank on Winden to start or grow their
           business. Open an account in under 3 minutes.
         </p>
-        <button className="bg-primary text-white px-4 py-2 ">
+        <button className="bg-primary text-white px-4 py-2 gap-3 text-xl">
           Get Started<AiOutlineArrowRight className="inline-block"/>
         </button>
         <p>
