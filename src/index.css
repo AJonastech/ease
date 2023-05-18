@@ -5,3 +5,10 @@
 /* *{
       border: 4px solid green;
 } */
+
+body,
+html {
+      min-height: 100vh;
+      height: 100vh;
+     
+}

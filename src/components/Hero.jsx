@@ -53,7 +53,7 @@ function Hero() {
           <small>Sign up today and earn up to $200. Conditions apply. **</small>
         </p>
       </div>
-      <div className="relative bg-white flex-col gap-2  flex my-[1rem] h-fit  w-full">
+      <div className="relative bg-white flex-col gap-2 my-[2rem]  flex lg:my-[1rem] h-fit  w-full">
         <HeroImg style={"w-full "} src={main} />
         <article className="  relative flex  my-[1rem] justify-center items-center px-[4rem] w-full h-fit">
           <HeroImg style={" z-10  h-[40vw]  object-cover "} src={hero1} />

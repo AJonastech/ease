@@ -6,7 +6,7 @@ import bgVideo from "./assets/videos/-9e7d-436d-8c86-9a177e4a782d.mp4";
 
 function App() {
   return (
-    <main className="relative min-h-screen h-screen ">
+    <main className="relative flex flex-col h-screen  sm:min-h-[170vh] min-h-[130vh]  ">
       <video
         src={bgVideo}
         type="video/mp4"
@@ -17,13 +17,12 @@ function App() {
         className="object-cover h-full w-full  -z-10"
       />
 
-      <div className=" absolute h-fit top-0 bottom-0 left-0 right-0">
-        <section>
-          <Nav />
-          <Hero />
-        </section>
-        <Footer />
-      </div>
+      <section className="absolute h-fit top-0 bottom-0 left-0 right-0">
+        <Nav />
+        <Hero />
+      </section>
+
+      <Footer />
     </main>
   );
 }

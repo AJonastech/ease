@@ -2,7 +2,7 @@
 import logo from "../assets/Images/logo.png"
 function Nav() {
     return (
-     <header className="flex text-white justify-between items-center lg:px-[80px] py-4 px-[1rem]">
+     <header className="flex text-white justify-between items-center lg:px-[80px] py-4 px-[1.5rem]">
         <div className="flex items-center gap-2">
           <img src={logo} alt="logo"/>
           <h2>Winden</h2>
