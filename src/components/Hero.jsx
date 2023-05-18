@@ -24,7 +24,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="text-[#fff] px-[80px] flex flex-col">
+    <div className="text-[#fff] lg:px-[80px] sm:px-[2rem] px-[1rem] flex flex-col">
       <div className="gap-2 flex flex-col mt-12">
         <h2 className="text-[59px] ">Business banking With</h2>
         <div className="overflow-y-hidden lg:h-fit h-[15rem]">
@@ -53,7 +53,7 @@ function Hero() {
           <small>Sign up today and earn up to $200. Conditions apply. **</small>
         </p>
       </div>
-      <div className="relative flex-col gap-2 bg-white flex my-[1rem] h-fit  w-full">
+      <div className="relative flex-col gap-2  flex my-[1rem] h-fit  w-full">
         <HeroImg src={main} />
         <article className="  relative flex  justify-center items-center px-[4rem] w-full h-fit">
           <HeroImg
