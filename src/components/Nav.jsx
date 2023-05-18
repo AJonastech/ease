@@ -2,13 +2,13 @@
 import logo from "../assets/Images/logo.png"
 function Nav() {
     return (
-     <header className="flex text-white justify-between items-center px-[80px] py-4">
+     <header className="flex text-white justify-between items-center lg:px-[80px] py-4 px-[1rem]">
         <div className="flex items-center gap-2">
           <img src={logo} alt="logo"/>
           <h2>Winden</h2>
         </div>
         <nav>
-         <ul className="flex gap-4">
+         <ul className="hidden gap-4 lg:flex">
             <li>
                 Use Cases
             </li>

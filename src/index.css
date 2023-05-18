@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+/* *{
+      border: 4px solid green;
+} */
