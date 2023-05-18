@@ -1,12 +1,12 @@
 /* eslint-disable react/style-prop-object */
 import React, {useState} from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import main from "../assets/Images/main.png";
 import hero1 from "../assets/Images/hero1.png";
 import hero2 from "../assets/Images/hero2.png";
 import hero3 from "../assets/Images/hero3.png"
 import HeroImg from "./HeroImg";
 import { motion } from "framer-motion";
+
 function Hero() {
     const textData = ["Zero Fees", "Free Wires", "Unlimited Rewards", "No Credit Check"]
  const [count, setCount] = useState(0);
@@ -34,7 +34,7 @@ function Hero() {
           business. Open an account in under 3 minutes.
         </p>
         <button className="bg-primary text-white px-4 py-2 ">
-          Get Started <AiOutlineArrowRight className="inline-block" />
+          Get Started
         </button>
         <p>
           {" "}
