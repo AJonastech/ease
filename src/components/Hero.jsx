@@ -65,7 +65,7 @@ function Hero() {
           />
           <HeroImg
             style={
-              " z-40 sm:-ml-[7rem] xl:-ml-[10rem]  -ml-[2rem] h-[40vw]  object-cover "
+              " z-40 sm:-ml-[7rem] xl:-ml-[10rem] ml-[1rem]   h-[40vw]  object-cover "
             }
             src={hero3}
           />
