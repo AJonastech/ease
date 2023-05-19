@@ -5,7 +5,7 @@ import main from "../assets/Images/main.png";
 import hero1 from "../assets/Images/hero1.png";
 import hero2 from "../assets/Images/hero2.png";
 import hero3 from "../assets/Images/hero3.png";
-import beauty from "../assets/Images/beauty.png"
+import beauty from "../assets/Images/beauty.png";
 import HeroImg from "./HeroImg";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -21,7 +21,7 @@ function Hero() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCount((count) => (count % 3) + 1);
+      setCount((count) => count=== 3 ?  0 : (count % 3) + 1);
     }, 3000); // update index three every second
 
     return () => clearInterval(interval);
@@ -30,19 +30,22 @@ function Hero() {
   return (
     <div className="text-[#fff] lg:px-[80px] sm:px-[2rem] px-[1rem] flex flex-col">
       <div className="gap-2 flex flex-col mt-12">
-        <h2 className="text-[39px] md:text-[59px]  text-transparent bg-clip-text bg-gradient-to-br font-bold inline-block from-[#b2beb5] to-[#fff] text-gradient-to-r  ">Business banking With</h2>
-        <div className="overflow-y-hidden lg:h-fit h-[15rem]">
-          {
-            <motion.h1
-              key={count}
-              initial={{ y: 100 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="text-[50px]  md:text-[80px] text-transparent bg-clip-text bg-gradient-to-br font-bold inline-block from-[#A088FF] to-[#37D7FF] text-gradient-to-t "
-            >
-              {textData[count]}
-            </motion.h1>
-          }
+        <h2 className="text-[39px] md:text-[59px]  text-transparent bg-clip-text bg-gradient-to-br font-bold inline-block from-[#b2beb5] to-[#fff] text-gradient-to-r  ">
+          Business banking With
+        </h2>
+        <div className="overflow-y-hidden z-20 h-[100px]  ">
+          <div>
+            <motion.div initial={{y: 100}} animate={{y: -100* count}} transition={{duration: 0.5}} className="flex-col flex gap-0">
+              {
+                textData.map((text, id)=>(
+                  <h1 key={id} className="text-[50px] h-[100px] md:text-[80px] text-transparent bg-clip-text flex items-center bg-gradient-to-br font-bold  from-[#A088FF] to-[#37D7FF] text-gradient-to-t ">
+                  {text}
+                </h1>
+                ))
+               
+              }
+            </motion.div>
+          </div>
         </div>
 
         <p className="text-[18px] mt-[-100px] md:mt-0 ">
@@ -53,9 +56,12 @@ function Hero() {
           Get Started
           <AiOutlineArrowRight className="inline-block" />
         </button>
-        <p className="mt-2" >
+        <p className="mt-2">
           {" "}
-          <small className="flex items-center gap-3"><img src={beauty} alt="some image" />Sign up today and earn up to $200. Conditions apply. **</small>
+          <small className="flex items-center gap-3">
+            <img src={beauty} alt="some image" />
+            Sign up today and earn up to $200. Conditions apply. **
+          </small>
         </p>
       </div>
       <div className="relative bg-white flex-col gap-2 my-[2rem] flex lg:my-[1rem] h-fit  w-full">
@@ -76,10 +82,8 @@ function Hero() {
               src={hero3}
             />
           </article>
-        <Footer/>
+          <Footer />
         </div>
-
-      
       </div>
     </div>
   );
