@@ -9,10 +9,10 @@ const imageSrc = [brand1, brand2, brand3, brand4, brand5];
 function Footer() {
   return (
     <footer className=" w-full  py-[2rem] mt-[100px] ">
-      <div className="flex w-full gap-4 justify-between px-[80px] ">
+      <div className="flex flex-col md:flex-row items-center gap-8 w-full md:gap-4 justify-between px-[80px] ">
         {imageSrc.map((src, id) => (
           // eslint-disable-next-line react/style-prop-object
-          <HeroImg  src={src} key={id} style={ "h-fit" } />
+          <HeroImg  src={src} key={id} style={ "h-[60px] " } />
         ))}
       </div>
     </footer>
