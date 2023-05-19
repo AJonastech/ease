@@ -30,7 +30,7 @@ function Hero() {
   return (
     <div className="text-[#fff] lg:px-[80px] sm:px-[2rem] px-[1rem] flex flex-col">
       <div className="gap-2 flex flex-col mt-12">
-        <h2 className="text-[39px] md:text-[59px]  text-transparent bg-clip-text bg-gradient-to-br font-bold inline-block from-[#b2beb5] to-[#fff] text-gradient-to-r  ">
+        <h2 className="text-[30px] md:text-[59px]  text-transparent bg-clip-text bg-gradient-to-br font-bold inline-block from-[#b2beb5] to-[#fff] text-gradient-to-r  ">
           Business banking With
         </h2>
         <div className="overflow-y-hidden z-20 h-[100px]  ">
@@ -38,7 +38,7 @@ function Hero() {
             <motion.div initial={{y: 100}} animate={{y: -100* count}} transition={{duration: 0.5}} className="flex-col flex gap-0">
               {
                 textData.map((text, id)=>(
-                  <h1 key={id} className="text-[50px] h-[100px] md:text-[80px] text-transparent bg-clip-text flex items-center bg-gradient-to-br font-bold  from-[#A088FF] to-[#37D7FF] text-gradient-to-t ">
+                  <h1 key={id} className="text-[40px] h-[100px] leading-0 md:text-[80px] text-transparent bg-clip-text flex items-center bg-gradient-to-br font-bold  from-[#A088FF] to-[#37D7FF] text-gradient-to-t ">
                   {text}
                 </h1>
                 ))
@@ -47,8 +47,8 @@ function Hero() {
             </motion.div>
           </div>
         </div>
-
-        <p className="text-[18px] mt-[-100px] md:mt-0 ">
+   
+        <p className="text-[18px]    ">
           Thousands of entrepreneurs bank on Winden to start or grow their
           business. Open an account in under 3 minutes.
         </p>
