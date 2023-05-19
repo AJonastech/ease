@@ -8,7 +8,7 @@ function Nav() {
           <h2>Winden</h2>
         </div>
         <nav>
-         <ul className="hidden gap-4 lg:flex">
+         <ul className="hidden gap-4 lg:flex cursor-pointer">
             <li>
                 Use Cases
             </li>
