@@ -61,7 +61,7 @@ function Hero() {
       <div className="relative bg-white flex-col gap-2 my-[2rem] flex lg:my-[1rem] h-fit  w-full">
         <HeroImg style={"w-full "} src={main} />
         <div className="">
-          <article className="  relative flex  mb-[1rem] mt-[-10em] justify-center items-center px-[4rem] w-full h-fit">
+          <article className="  relative flex  mb-[1rem] mt-[-3em] lg:mt-[-10em] justify-center items-center px-[4rem] w-full h-fit">
             <HeroImg style={"   h-[40vw]  object-cover "} src={hero1} />
             <HeroImg
               style={
